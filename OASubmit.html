@@ -1,0 +1,387 @@
+<html>
+
+    <title>Make An Appointment | MRAS</title>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width = device - width, initial-scale = 1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <style type="text/css">
+
+        * {
+
+            margin: 0;
+
+        }
+
+        header {
+
+            background: white;
+
+            box-sizing: border-box;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            position: fixed;
+
+            top: 0;
+
+            transition: all 0.35s ease 0s;
+
+            width: 100%;
+
+            padding: 15px 5%;
+
+            box-shadow: 0 5px 10px -10px black;
+
+        }
+
+        .nav-links {
+
+            list-style: none;
+
+        }
+
+        .nav-links li a{
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 18px;
+
+            letter-spacing: 0.175em;
+
+            color: #4D4D4D;
+
+            text-decoration: none;
+
+            transition: all 0.3s ease 0s;
+
+        }
+
+        .nav-links li a:hover {
+
+            color: black;
+
+        }
+
+        .nav-links li {
+
+            display: inline-block;
+
+            padding: 0 25px;
+
+        }
+
+        .appointment {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 18px;
+
+            letter-spacing: 0.175em;
+
+            color: white;
+
+            text-decoration: none;
+
+            background: #9830AB;
+
+            border-radius: 0.625rem;
+
+            padding: 15px;
+
+            text-align: center;
+
+            transition: all 0.3s ease 0s;
+
+        }
+
+        .appointment:hover {
+
+            background-color: #591C64;
+
+        }
+
+        .content {
+
+            background-color: #F4F4F4;
+            padding: 130px 300px 50px;
+
+            letter-spacing: 0.175em;
+
+            text-align: center;
+
+        }
+
+        .content h1 {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-weight: bolder;
+
+            text-align: center;
+
+            letter-spacing: 4px;
+
+        }
+
+        .content .message {
+
+            padding: 50px 0 60px 0;
+
+        }
+
+        .content .message p {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 18px;
+
+            text-align: justify;
+
+            text-indent: 25px;
+
+            letter-spacing: 3px;
+
+            margin: 15px 0;
+
+        }
+
+        .content a {
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 18px;
+
+            font-weight: bolder;
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 20px 50px;
+
+            background: #9830AB;
+
+            border-radius: 10px;
+
+        }
+
+        footer {
+
+            position: fixed;
+
+            left: 0;
+
+            bottom: 0;
+
+            width: 100%;
+
+            background-color: white;
+
+        }
+
+        .main-content h4 {
+
+            font-family: 'Roboto', sans-serif;
+
+            letter-spacing: 0.175em;
+
+        }
+
+
+
+        .main-content {
+
+            box-sizing: border-box;
+
+            bottom: 0px;
+
+            width: 100%;
+
+            display: flex;
+
+            flex-basis: 50%;
+
+            justify-content: center;
+
+            padding: 10px 20px;
+
+        }
+
+
+
+        .main-content p {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 15px;
+
+            letter-spacing: 0.175em;
+
+            color: #656565;
+
+            margin: 5px 0 0 0;
+
+        }
+
+
+
+        .left-content, .mid-content, .right-content {
+
+            padding: 0 50px;
+
+        }
+
+
+
+        .copyright p {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 12px;
+
+            letter-spacing: 0.175em;
+
+            color: #4D4D4D;
+
+            text-align: center;
+
+        }
+
+    </style>
+
+    <body>
+
+        <header id="navbar">
+
+            <a href="/index.html"><img src="resources/Logo MRAS1.png" alt="Logo MRAS"></a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/index.html">Home</a></li>
+
+                    <li><a href="/About.html">About</a></li>
+
+                    <li><a href="/Services.html">Services</a></li>
+
+                    <li><a href="/Contact-Us.html">Contact Us</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="/OnlineAppointment.html" class="appointment">Online Appointment</a>
+
+        </header>
+
+        <div class="content">
+
+            <h1>THANK YOU FOR TRUSTING US!</h1>
+
+            <div class="message">
+
+                <p>Please wait for our management to contact you to confirm your appointment.</p>
+
+                <p>In compliance to the Republic Act 10173 - Data Privacy Act of 2012, any personal information you disclosed with us will be handled with strict confidentiality.</p>
+
+            </div>
+
+            <a href="/HomePage.html" class="button">Back To Home</a>
+
+        </div>
+
+        <footer>
+
+            <div class="main-content">
+
+                <div class="left-content">
+
+                    <h4>GOT QUESTIONS?</h4>
+
+                    <p>Should you wish to have more information, just contact us! See <a href="#">Contact Us</a> for more details.</p>
+
+                    <p>You can also inquire through our email <u>mras.012018@gmail.com</u>.</p>
+
+                </div>
+
+                <div class="mid-content">
+
+                    <h4>WORKING HOURS</h4>
+
+                    <p>We are open from 1:00 PM to 3:00 AM</p>
+
+                    <h4>LOCATION</h4>
+
+                    <p>Blk 3 Kaingin 1, Pansol, Quezon City</p>
+
+                </div>
+
+                <div class="right-content">
+
+                    <h4>CALL US</h4>
+
+                    <p>Tel. No. (632) 475-0855</p>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+
+                <p>© 2021 Masikap Refrigeration and Air-conditioning Services (MRAS). All rights Reserved.</p>
+
+            </div>
+
+        </footer>
+
+
+
+        <script type="text/javascript">
+
+            var lastScrollTop = 0;
+
+                navbar = document.getElementById("navbar");
+
+            window.addEventListener("scroll", function(){
+
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > lastScrollTop){
+
+                    navbar.style.top = "-110%";
+
+                }
+
+                else {
+
+                    navbar.style.top = "0";
+
+                }
+
+                lastScrollTop = scrollTop;
+
+            })
+
+        </script>
+
+    </body>
+
+</html>

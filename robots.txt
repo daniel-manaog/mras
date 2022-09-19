@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /services/
+Disallow: /resources/
+
+Sitemap: https://masikap-refrigeration-and-air-conditioning-services.com/sitemap.xml

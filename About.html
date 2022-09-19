@@ -1,0 +1,554 @@
+<html>
+
+    <title>About | MRAS</title>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width = device - width, initial-scale = 1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <style type="text/css">
+
+        * {
+
+            margin: 0;
+
+        }
+
+        header {
+
+            background: white;
+
+            box-sizing: border-box;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            position: fixed;
+
+            top: 0;
+
+            transition: all 0.35s ease 0s;
+
+            width: 100%;
+
+            padding: 15px 5%;
+
+            box-shadow: 0 5px 10px -10px black;
+
+        }
+
+        .nav-links {
+
+            list-style: none;
+
+        }
+
+        .nav-links li a{
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 18px;
+
+            letter-spacing: 0.175em;
+
+            color: #4D4D4D;
+
+            text-decoration: none;
+
+            transition: all 0.3s ease 0s;
+
+        }
+
+        .nav-links li a:hover {
+
+            color: black;
+
+        }
+
+        .nav-links li {
+
+            display: inline-block;
+
+            padding: 0 25px;
+
+        }
+
+        .nav-links #current-page {
+
+            font-weight: bold;
+
+        }
+
+        .nav-links .icon {
+
+            display: none;
+
+        }
+
+        .appointment {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 18px;
+
+            letter-spacing: 0.175em;
+
+            color: white;
+
+            text-decoration: none;
+
+            background: #9830AB;
+
+            border-radius: 0.625rem;
+
+            padding: 15px;
+
+            text-align: center;
+
+            transition: all 0.3s ease 0s;
+
+        }
+
+        .appointment:hover {
+
+            background-color: #591C64;
+
+        }
+
+        @media screen and (max-width: 700px) {
+
+            body header {
+
+                background: white;
+
+                display: block;
+
+                text-align: center;
+
+                top: 0;
+
+                transition: all 0.35s ease 0s;
+
+                box-shadow: 0 5px 10px -10px black;
+
+            }
+
+            .nav-links a, .appointment {
+
+                display: none;
+
+            }
+
+            img {
+
+                width: 40%;
+
+                height: 30%;
+
+            }
+
+            .navbar a.icon {
+
+                display: block;
+
+            }
+
+            body .main-content {
+
+                display: block;
+
+                text-align: center;
+
+            }
+
+        }
+
+        @media screen and (max-width: 700px) {
+
+            body .nav-links li {
+
+                display: block;
+
+            }
+
+            .navbar.responsive .icon {
+
+                position: absolute;
+
+                top: 10%;
+
+                right: 5%;
+
+            }
+
+            .navbar.responsive a {
+
+                float: none;
+
+                display: block;
+
+                text-align: center;
+
+            }
+
+            .navbar.responsive img {
+
+                float: none;
+
+                display: block;
+
+                text-align: left;
+
+            }
+
+        }
+
+
+
+        .desc {
+
+            text-align: center;
+
+            padding: 120px 10px 10px;
+
+            border-bottom: 1px solid black;
+
+        }
+
+        .content1 {
+
+            text-align: center;
+
+            background-color: #F4F4F4;
+
+            padding: 100px;
+
+        }
+
+        .content1 img {
+
+            width: 250px;
+
+            height: 140px;
+
+        }
+
+        .content2 {
+
+            padding: 80px 0;
+
+        }
+
+        .content2 p{
+
+            text-indent: 25px;
+
+            text-align: justify;
+
+        }
+
+        .content3 {
+
+            background-color: #F4F4F4;
+
+            padding: 80px 0;
+
+        }
+
+        .content3 p{
+
+            text-indent: 25px;
+
+            text-align: justify;
+
+        }
+
+        .container h1 {
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-weight: bolder;
+
+            text-align: center;
+
+            letter-spacing: 4px;
+
+        }
+
+        .container p {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 18px;
+
+            letter-spacing: 3px;
+
+            padding: 0 250px;
+
+            margin: 20px 10px 10px 0;
+
+        }
+
+
+
+        footer {
+
+            background-color: white;
+
+            flex-shrink: 0;
+
+        }
+
+        .main-content h4 {
+
+            font-family: 'Roboto', sans-serif;
+
+            letter-spacing: 0.175em;
+
+        }
+
+
+
+        .main-content {
+
+            box-sizing: border-box;
+
+            bottom: 0px;
+
+            width: 100%;
+
+            display: flex;
+
+            flex-basis: 50%;
+
+            justify-content: center;
+
+            padding: 10px 20px;
+
+        }
+
+
+
+        .main-content p, a {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 15px;
+
+            letter-spacing: 0.175em;
+
+            color: #656565;
+
+            margin: 5px 0 0 0;
+
+        }
+
+
+
+        .left-content, .mid-content, .right-content {
+
+            padding: 0 50px;
+
+        }
+
+
+
+        .copyright p {
+
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 12px;
+
+            letter-spacing: 0.175em;
+
+            color: #4D4D4D;
+
+            text-align: center;
+
+        }
+
+
+
+    </style>
+
+    <body>
+
+        <header class="navbar" id="navbar">
+
+            <a href="/index.html"><img src="resources/Logo MRAS1.png" alt="Logo MRAS"></a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/index.html">Home</a></li>
+
+                    <li><a href="/About.html" id="current-page">About</a></li>
+
+                    <li><a href="/Services.html">Services</a></li>
+
+                    <li><a href="/Contact-Us.html">Contact Us</a></li>
+
+                    <li><a href="javascript:void(0);" class="icon" onclick="responsiveFunc()">
+
+                        <i class="fa fa-bars"></i></a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a href="/OnlineAppointment.html" class="appointment">Online Appointment</a>
+
+        </header>
+
+        <div class="container">
+
+            <div class="desc">
+
+                <h1>About Us</h1>
+
+            </div>
+
+            <div class="content1">
+
+                <img src="resources/Logo.png" alt="MRAS Logo">
+
+                <p><i>An authorized Daikin dealer and installer</i></p>
+
+            </div>
+
+            <div class="content2">
+
+                <h1>Our Story</h1>
+
+                <p><b>Masikap Refrigeration and Air-conditioning Services (MRAS)</b> is a Refrigeration Air-conditioning Company organized on 15th of January 2014, dedicated on providing the highest quality service and installations at the most competitive cost.</p>
+
+                <p>We specialize in residential, commercial and industrial air conditioning.</p>
+
+                <p>We operate with honesty and constantly strive to find new technologies and systems to allow us to provide the highest levels of customer service and satisfaction.</p>
+
+                <p>We are trained and have extensive knowledge with all brands and models and have the skills to service on any type of residential, commercial or industrial systems ranging from window type air-conditioning to centralized air-conditioning system.</p>
+
+            </div>
+
+            <div class="content3">
+
+                <h1>Our Goal</h1>
+
+                <p>Our goal is to provide you as a customer with the best Quality Service and highest Quality Products at competitive prices. In doing so, we will accomplish our ultimate goal of building long lasting customer relationships one at a time.</p>
+
+            </div>  
+
+        </div>
+
+        <footer>
+
+            <div class="main-content">
+
+                <div class="left-content">
+
+                    <h4>GOT QUESTIONS?</h4>
+
+                    <p>Should you wish to have more information, just contact us! See <span><a href="/Contact-Us.html">Contact Us</a></span> for more details.</p>
+
+                    <p>You can also inquire through our email <span><a href="mailto:mras.012018@gmail.com">mras.012018@gmail.com</a></span>.</p>
+
+                </div>
+
+                <div class="mid-content">
+
+                    <h4>WORKING HOURS</h4>
+
+                    <p>We are open from 12:00 AM to 12:00 PM</p>
+
+                    <h4>LOCATION</h4>
+
+                    <a href="https://www.google.com/maps/place/3+Kaingin+1,+Matandang+Balara,+Quezon+City,+Metro+Manila/@14.6574046,121.0849143,21z/data=!4m5!3m4!1s0x3397b9de124789a5:0x1be740620b5015b1!8m2!3d14.6574523!4d121.0849956" target="_blank" rel="noopener noreferrer">Blk 3 Kaingin 1, Pansol, Quezon City</a>
+                
+                </div>
+                
+                <div class="right-content">
+                    
+                    <h4>CALL US</h4>
+                    
+                    <p>Tel. No. (632) 475-0855</p>
+                
+                </div>
+            
+            </div>
+            
+            <div class="copyright">
+                
+                <p>© 2021 Masikap Refrigeration and Air-conditioning Services (MRAS). All rights Reserved.</p>
+           
+            </div>
+        
+        </footer>
+
+
+
+        <script type="text/javascript">
+
+            var lastScrollTop = 0;
+
+                navbar = document.getElementById("navbar");
+
+            window.addEventListener("scroll", function(){
+
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > lastScrollTop){
+
+                    navbar.style.top = "-110%";
+
+                }
+
+                else {
+
+                    navbar.style.top = "0";
+
+                }
+
+                lastScrollTop = scrollTop;
+
+            })
+
+            function responsiveFunc() {
+
+            var x = document.getElementById("navbar");
+
+                if (x.className === "navbar") {
+
+                    x.className += " responsive";
+
+                } 
+
+                else {
+
+                    x.className = "navbar";
+
+                }
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
